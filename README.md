@@ -1,10 +1,10 @@
 # Global-Clock-Embedded-C
 A C Project running on a TM4C123GH6PM microcontroller that displays the current clock for different cities using the FreeRTOS APIs
 
-# 1. General Description  
+## 1. General Description  
 The main goal of the project is to display the time in different cities on a 16x2 LCD using TivaC and the FreeRTOS framework. The code starts with the user entering the current time of London by using the keyboard serial input to the TivaC UART. Then, the code by default should display the clock in London and increments the time every second. After that, the program output to the user the cities that he can choose from to display their current time. The TivaC achieves other cities’ time by adding hour differences to the original London current time, and then displays the correct output by incrementing every second.
 
-# 2. Functions Description  
+## 2. Functions Description  
 Queue1 is responsible to send the incremented time that done by task1 and sends it task2.  
 Queue2 is responsible to take the initial time that happens in task3 and sends it to task1.  
   
